@@ -7,8 +7,8 @@ This repo contains 2 projects:
 
 To run complete-app:
 
-> cd complete-app
-> npm install
-> node server.js
+`cd complete-app
+npm install
+node server.js`
 
 prototype-app runs the same 
