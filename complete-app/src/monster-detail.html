@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monster Store</title>    
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.css">
+
+<link rel="stylesheet" href="css/main.css">
+
+ <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+
+          <a class="navbar-brand" href="/">Monster Store</a>
+        </div>
+
+      </div>
+</nav>
+
+<div class="main-app" ng-app="monsterApp">
+
+<div class="container">
+
+  <div class="row cart-sell">
+    <div class="col-sm-4">
+        <a href="/" class="btn btn-warning"><span class="octicon octicon-chevron-left"></span> Monsters</a>
+    </div>
+    <div class="col-sm-4 col-sm-offset-4">
+      <a href="/sell.html" class="btn btn-danger">Sell</a>
+      <a href="/checkout.html" class="btn btn-checkout">Checkout (0)</a>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-8">
+
+      <div class="box monster detail">
+
+      <div class="row">
+        <div class="col-sm-5">
+           <img src="images/zilla.jpg" alt="Godzilla"/>  
+        </div>
+        <div class="col-sm-7">
+          <h3>Godzilla</h3>
+
+          <div><b>Birthday: </b>  January 1, 1954</div>
+          <div><b>Age: </b>  62</div>
+          <div><b>Price: </b>  $3,000,000</div>
+
+          
+        </div>
+      </div>
+      
+      
+      <div class="img-wrapper">
+       
+      </div>
+      
+      <p class="summary">
+        Godzilla is a giant monster originating from a series of tokusatsu films of the same name from Japan. It first appeared in Ishirō Honda's 1954 film Godzilla. Since then, Godzilla has gone on to become a worldwide pop culture icon, appearing in numerous media including video games, novels, comic books, television shows, 28 films 
+produced by Toho and two Hollywood films. The character is commonly alluded to by the title King of the Monsters, a phrase first used in Godzilla, King of the Monsters!, the Americanized version of Honda's original 1954 film.
+      </p>
+
+    <div class="row">
+      <div class="col-sm-1 col-sm-offset-10">
+        <button class="btn btn-danger">Add to Cart</button>
+      </div>
+    </div>
+      
+
+
+          </div> <!-- // monster -->
+    </div> <!-- monster-col -->
+      
+  </div>
+
+  
+
+</div> <!-- // container -->
+</div> <!-- // main-app -->
+
+<footer>
+  
+    &copy; 2016 Northstar New Media
+
+</footer>
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+</body>
+</html>

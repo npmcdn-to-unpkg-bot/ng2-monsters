@@ -1,0 +1,53 @@
+<div class="row cart-sell">
+    <div class="col-sm-4">
+        <a [routerLink]="['Monsters']" class="btn btn-warning"><span class="octicon octicon-chevron-left"></span> Monsters</a>
+    </div>
+    <div class="col-sm-4 col-sm-offset-4">
+        <a [routerLink]="['MonsterSell']" class="btn btn-sell">Sell</a>
+        <cart-button></cart-button>
+    </div>
+</div>
+
+<ui-message></ui-message>
+
+<div *ngIf="monster" class="row">
+
+    <div class="col-sm-8">
+
+        <div class="box monster detail">
+
+            <div class="row">
+                <div class="col-sm-5">
+
+                    <div class="img-wrapper">
+                        <img src="{{monster.img}}" alt="{{monster.name}}"/>
+                    </div>
+
+                </div>
+                <div class="col-sm-7">
+                    <h3>{{monster.name}}</h3>
+
+                    <div><b>Birthday: </b>  {{monster.birthday}}</div>
+                    <div><b>Age: </b>  62</div>
+                    <div><b>Price: </b>  {{monster.price | currency:'USD':true }}</div>
+
+
+                </div>
+            </div>
+
+            <p class="detail">
+                {{monster.description}}
+            </p>
+
+            <div class="row">
+                <div class="col-sm-1 col-sm-offset-10">
+                    <button class="btn btn-danger" (click)="addToCart(monster)">Add to Cart</button>
+                </div>
+            </div>
+
+
+
+        </div> <!-- // monster -->
+    </div> <!-- monster-col -->
+
+</div>

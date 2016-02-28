@@ -1,0 +1,42 @@
+<div class="row cart-sell">
+    <div class="col-sm-4 col-sm-offset-8">
+        <a [routerLink]="['MonsterSell']" class="btn btn-sell">Sell</a>
+        <cart-button></cart-button>
+    </div>
+</div>
+
+<ui-message></ui-message>
+
+<div class="row">
+
+    <!-- // MONSTER 1 -->
+    <div *ngFor="#monster of monsters" class="col-sm-4">
+
+        <div class="box monster">
+            <a *ngIf="canEdit(monster)" [routerLink]="['MonsterSellEdit',{id: monster.id}]" class="edit octicon octicon-pencil"></a>
+
+            <h3>{{monster.name}}</h3>
+
+
+            <div class="img-wrapper">
+                <img [src]="monster.img" [alt]="monster.name"/>
+            </div>
+
+            <p class="summary">
+                {{monster.description | monsterSummary }}
+            </p>
+
+            <div class="row">
+                <div class="col-sm-5 price">
+                    {{ monster.price | currency:'USD':true }}
+                </div>
+                <div class="col-sm-7">
+                    <a [routerLink]="['Monster',{id: monster.id}]" class="btn btn-details">Details</a>
+                    <button type="button" (click)="addToCart(monster)" class="btn btn-cart">Add to Cart</button>
+                </div>
+            </div>
+
+        </div> <!-- // monster -->
+    </div> <!-- monster-col -->
+
+</div> <!-- // row -->

@@ -1,0 +1,29 @@
+{
+  "name": "lab0-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ben@nofluffjuststuff.com",
+  "license": "ISC",
+  "devDependencies": {
+    "angular2": "^2.0.0-beta.7",
+    "body-parser": "^1.14.2",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.33.13",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.3.2",
+    "gulp-typescript": "^2.12.0",
+    "lodash": "^4.5.1",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "tslint": "^3.5.0",
+    "typescript": "^1.8.2",
+    "zone.js": "^0.5.15"
+  }
+}

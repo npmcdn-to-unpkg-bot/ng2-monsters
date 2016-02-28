@@ -1,0 +1,58 @@
+<div class="row cart-sell">
+    <div class="col-sm-4">
+        <a [routerLink]="['Monsters']" class="btn btn-warning"><span class="octicon octicon-chevron-left"></span> Monsters</a>
+    </div>
+
+</div>
+
+<ui-message></ui-message>
+
+<div *ngIf="monsters" class="row">
+
+    <div class="col-sm-8">
+
+        <div class="checkout-box box">
+
+            <h3>Checkout</h3>
+
+            <table class="table table-striped">
+                <tr>
+                    <th>Item</th>
+                    <th class="col-sm-2">Price</th>
+                    <th class="col-sm-1"></th>
+                </tr>
+
+                <tr *ngFor="#monster of monsters">
+                    <td>{{monster.name}}</td>
+
+                    <td>{{monster.price | currency:'USD':true }}</td>
+                    <td>
+                        <button (click)="removeMonster(monster)" class="btn btn-default"><span class="octicon octicon-x"></span></button>
+                    </td>
+                </tr>
+
+                <tr *ngIf="monsters.length > 0">
+                    <td><b>Total</b></td>
+                    <td>{{totalPrice | currency:'USD':true }}</td>
+                    <td></td>
+                </tr>
+                <tr *ngIf="monsters.length === 0">
+                    <td colspan="3"><em>Your cart is empty</em></td>
+                </tr>
+
+
+            </table>
+
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-10">
+                    <button [disabled]="monsters.length == 0" (click)="checkOutClicked()" class="btn btn-danger">Checkout</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div> <!-- checkout-col -->
+
+</div>
+

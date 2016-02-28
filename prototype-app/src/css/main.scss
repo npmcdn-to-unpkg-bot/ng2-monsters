@@ -1,0 +1,103 @@
+
+
+$dark-blue: #2C99B9;
+$dark-blue2: #00536A;
+$light-blue: #62CEF0;
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Bangers|Open+Sans);
+
+body {
+	background: $dark-blue;
+}
+
+
+nav.navbar {
+
+	background: $dark-blue;
+	border-bottom: none;
+
+	a.navbar-brand { font-family: 'Bangers'; font-size: 36px; color: #fff; }
+
+}
+
+.btn-sell { background: #D9534F; color: #fff; }
+.btn-checkout { background: #F0AD4E; color: #fff; }
+.btn-details { background: #337AB7; color: #fff; }
+.btn-cart { background: #D9534F; color: #fff; }
+
+div.box {
+	background: #fff;
+	border-radius: 8px;
+	padding: 15px;
+	margin-bottom: 30px;
+}
+
+div.main-app { 
+	background: $light-blue;
+	padding-top: 70px; 
+	min-height: 700px;
+
+	div.cart-sell {  
+		margin-bottom: 40px;
+		.btn { width: 150px; }   
+	}
+
+	div.monster {		
+
+		a.edit { font-size: 18px; text-decoration: none; z-index: 1; position: absolute; right: 30px; display: none; }
+
+		h3 { margin: 0; text-align: center; font-family: 'Bangers'; font-size: 30px; }
+
+		img {
+			display: block;
+			max-width: 300px;
+			max-height: 300px;
+			margin: 0 auto 20px auto;
+			border: 1px solid #999;
+		}
+
+		div.price {
+			font-family: 'Bangers';
+			font-size: 24px;
+			font-weight: bold;
+		}
+
+	}
+
+	div.monster.detail {
+		h3 { text-align: left; }
+	}
+
+	div.monster:hover {
+		a.edit {  display: block; }		
+	} 
+
+
+}
+
+
+div.sell-box {
+	h3 { color: $dark-blue2; margin: 0 0 30px 0; padding: 0; font-family: 'Bangers'; font-size: 36px; }	
+
+	form { padding: 0 15px; }
+}
+
+div.checkout-box {
+	h3 { color: $dark-blue2; margin: 0 0 30px 0; padding: 0; font-family: 'Bangers'; font-size: 36px; }	
+
+	form { padding: 0 15px; }
+}
+
+
+
+footer {
+	background: $dark-blue;
+	color: #fff;
+	text-align: center;
+	font-family: 'Bangers';
+	padding: 30px;
+}
+
+
